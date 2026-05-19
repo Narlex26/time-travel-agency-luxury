@@ -9,13 +9,13 @@ import {
   Instagram,
   Twitter,
   Facebook,
-  MessageCircle,
   ArrowRight,
   Quote,
 } from "lucide-react";
 import parisImg from "@/assets/paris-1889.jpg";
 import cretaceImg from "@/assets/cretace.jpg";
 import florenceImg from "@/assets/florence-1504.jpg";
+import { Chatbot } from "@/components/Chatbot";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -519,23 +519,6 @@ function Footer() {
   );
 }
 
-function ChatbotButton() {
-  return (
-    <motion.button
-      initial={{ opacity: 0, scale: 0 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ delay: 1.2, type: "spring" }}
-      whileHover={{ scale: 1.1, rotate: -8 }}
-      whileTap={{ scale: 0.95 }}
-      aria-label="Ouvrir le chat"
-      className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-gold text-primary-foreground flex items-center justify-center shadow-2xl shadow-gold/40 hover:shadow-gold/60 transition-shadow"
-    >
-      <MessageCircle className="w-5 h-5" />
-      <span className="absolute inset-0 rounded-full bg-gold animate-ping opacity-20" />
-    </motion.button>
-  );
-}
-
 function Index() {
   return (
     <main className="bg-background text-foreground antialiased">
@@ -548,7 +531,7 @@ function Index() {
       <Divider />
       <Testimonials />
       <Footer />
-      <ChatbotButton />
+      <Chatbot />
     </main>
   );
 }
