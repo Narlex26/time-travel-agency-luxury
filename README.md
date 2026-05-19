@@ -1,7 +1,7 @@
 # TimeTravel Agency — Webapp Interactive
 
-> **Auteur** : Alexandre Boyer (projet individuel)
-> **Cadre** : Projet Supervisé IA M1/M2 — Session 2 (Webapp & IA Agents)
+> **Auteurs** : Alexandre Boyer & Job Hermann MOUNCHILI TESSO
+> **Cadre** : Projet Supervisé IA M2 — Session 2 (Webapp & IA Agents) — travail en groupe
 
 Webapp interactive pour une agence fictive de voyage temporel de luxe. Trois destinations — **Paris 1889**, **le Crétacé**, **Florence 1504** — présentées dans une interface immersive sombre/dorée, avec un **chatbot IA Groq** et un **quiz de recommandation personnalisée** alimenté par IA.
 
