@@ -12,6 +12,9 @@ import {
   ArrowRight,
   Quote,
 } from "lucide-react";
+import parisImg from "@/assets/paris-1889.jpg";
+import cretaceImg from "@/assets/cretace.jpg";
+import florenceImg from "@/assets/florence-1504.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
