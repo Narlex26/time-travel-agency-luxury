@@ -16,6 +16,7 @@ import parisImg from "@/assets/paris-1889.jpg";
 import cretaceImg from "@/assets/cretace.jpg";
 import florenceImg from "@/assets/florence-1504.jpg";
 import { Chatbot } from "@/components/Chatbot";
+import { Quiz } from "@/components/Quiz";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -528,6 +529,8 @@ function Index() {
       <About />
       <Divider />
       <Destinations />
+      <Divider />
+      <Quiz />
       <Divider />
       <Testimonials />
       <Footer />
