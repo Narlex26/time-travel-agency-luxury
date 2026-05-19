@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
 import {
@@ -17,28 +16,6 @@ import cretaceImg from "@/assets/cretace.jpg";
 import florenceImg from "@/assets/florence-1504.jpg";
 import { Chatbot } from "@/components/Chatbot";
 import { Quiz } from "@/components/Quiz";
-
-export const Route = createFileRoute("/")({
-  component: Index,
-  head: () => ({
-    meta: [
-      { title: "TimeTravel Agency — Voyages temporels de luxe" },
-      {
-        name: "description",
-        content:
-          "L'agence de voyage temporel de luxe. Explorez l'histoire en toute sécurité avec des guides historiens experts.",
-      },
-    ],
-    links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap",
-      },
-    ],
-  }),
-});
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -339,14 +316,11 @@ function Destinations() {
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-[1.4s] group-hover:scale-110"
                 />
-                {/* Bottom dark gradient for title readability */}
                 <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-card via-card/80 to-transparent" />
-                {/* Year badge top-left */}
                 <div className="absolute top-4 left-4 flex items-center gap-1.5 bg-background/80 backdrop-blur-sm border border-gold/50 text-gold px-3 py-1.5 text-[0.65rem] tracking-[0.2em] font-medium">
                   <Calendar className="w-3 h-3" />
                   {d.yearLabel}
                 </div>
-                {/* Title overlay on image */}
                 <div className="absolute inset-x-0 bottom-0 p-6">
                   <div className="text-gold text-[0.65rem] tracking-[0.4em] uppercase mb-2">
                     {d.era}
@@ -520,7 +494,7 @@ function Footer() {
   );
 }
 
-function Index() {
+export default function App() {
   return (
     <main className="bg-background text-foreground antialiased">
       <Header />
