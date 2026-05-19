@@ -316,7 +316,7 @@ function Destinations() {
               <div className="relative aspect-[4/5] overflow-hidden">
                 <img
                   src={d.image}
-                  alt={d.title}
+                  alt={d.alt}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-[1.2s] group-hover:scale-110"
                 />
