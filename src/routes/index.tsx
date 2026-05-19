@@ -258,24 +258,24 @@ const destinations = [
     title: "Paris, Belle Époque",
     desc: "Vivez l'inauguration de la Tour Eiffel et l'effervescence de l'Exposition Universelle.",
     price: "12 500 €",
-    image:
-      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1400&q=80",
+    image: parisImg,
+    alt: "Paris en 1889, vue de la Tour Eiffel et de l'Exposition Universelle",
   },
   {
     era: "-65M",
     title: "Crétacé supérieur",
     desc: "Côtoyez les dinosaures dans une nature préhistorique vierge, sous escorte armée.",
     price: "18 900 €",
-    image:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1400&q=80",
+    image: cretaceImg,
+    alt: "Paysage du Crétacé avec dinosaures dans une forêt préhistorique",
   },
   {
     era: "1504",
     title: "Florence, Renaissance",
     desc: "Rencontrez Michel-Ange dans son atelier au moment du dévoilement du David.",
     price: "14 200 €",
-    image:
-      "https://images.unsplash.com/photo-1543429776-2782fc8e1acd?auto=format&fit=crop&w=1400&q=80",
+    image: florenceImg,
+    alt: "Florence en 1504, vue sur le Duomo et l'architecture Renaissance",
   },
 ];
 
